@@ -95,3 +95,53 @@ Username: admin
 Password: adminpassword
 
 (You can also create new users from the registration page.)
+
+
+
+📚 Documentation
+Project Structure
+/src/ - Java Servlets and Backend Code
+
+/WebContent/ - HTML, JSP files, and CSS
+
+/database/ - SQL files to create tables
+
+/lib/ - External libraries (like MySQL Connector JAR)
+
+Website Flow
+Home Page: Displays available products.
+
+User Login/Registration: Allows users to register and log in.
+
+Product Browsing: Users can view products and add them to cart.
+
+Cart Management: View and update the cart before placing an order.
+
+Order Placement: Confirm and place the order.
+
+Order History: View past orders from the user account.
+
+Admin Dashboard: Admin can add, edit, and delete products.
+
+Database Design
+Tables Used:
+
+users - Stores user information (id, name, email, password)
+
+products - Stores product details (id, name, price, description, image)
+
+orders - Stores order information (order id, user id, date, total)
+
+order_items - Stores individual items inside an order (order id, product id, quantity)
+
+(Optional: You can add a small ER Diagram if you want to look more professional.)
+
+Important URLs (Servlets and JSPs)
+
+URL	Purpose
+/login.jsp	User login page
+/register.jsp	User registration page
+/home.jsp	Home page showing products
+/cart.jsp	Shopping cart page
+/admin/login.jsp	Admin login page
+/admin/dashboard.jsp	Admin dashboard
